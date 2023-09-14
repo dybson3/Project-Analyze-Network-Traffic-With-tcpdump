@@ -1,7 +1,7 @@
 # Project-Analyze-Network-Traffic-With-tcpdump
 I guided project implemented on Coursera platform.
 
-Goal of the project is to create a script to monitor network traffic on a website skyroute66.com
+Goal of the project is upgrade my skills with tcpdump.
 
 **Task 1 - Warm up**
 
@@ -59,5 +59,50 @@ Wireshark is one of the best software to inspect packets. It shows a human-reada
 I added the part to my shell script "-C 1 -G 600". 
 
 "-C 1" - creates new file if current file exceeds 1 000 000 bytes.
+
 "-G 600" - file clears itself after 10 minutes.
+
+<br>
+<br>
+
+**Task 5 -	Advanced expressions for more filtering options**
+
+![image](12.png)
+
+A little fun fact. This command filters for get request for tcp protocol.
+
+<br>
+<br>
+
+**Final Task - Culmulative challenge**
+
+I was given a following task:
+
+![image](7.png)
+
+To complete this exercise I created file "checkspy.sh" and I gave it executable permission:
+
+![image](13.png)
+
+To meet task's requirements I wrote script:
+
+![image](8.png)
+
+In shortage, we are listening to port 22 which stands for SSH connections.
+
+We save our work in proof.pcap file. The dump files are no bigger than 2 000 000 bytes and contain no longer than 10 minutes of capture.
+
+Next, I created a ssh connection to catch any traffic.
+
+![image](9.png)
+
+After catching some packets I put the file into Wireshark to analyze traffic on SSH port.
+
+![image](10.png)
+
+As we can see, there is some traffic on this port initialized by me. :D 
+
+
+
+
  
